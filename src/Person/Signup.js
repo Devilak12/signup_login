@@ -1,8 +1,14 @@
 import React from 'react'
 
-const signup = ()=>{
+class signup extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={};
+  }
+  signupSubmit(e){};
+  render(){
     return(
-      <div>
+      <div className='box'>
         <h1>Sign Up</h1>
         <form>
         <div className="form-group">
@@ -21,9 +27,10 @@ const signup = ()=>{
             <label for="exampleInputPassword1">Password</label>
             <input type="password" className="form-control" id="exampleInputPassword1" placeholder="Password"></input>
           </div>
-          <button type="submit" className="btn btn-primary">Sign Up</button> OR <button className="btn btn-primary">Sign in</button>
+          <button type="submit" className="btn btn-primary" onClick={this.signupSubmit.bind(this)}>Sign Up</button> 
         </form>
         </div>
     );
+  }
 }
 export default signup
