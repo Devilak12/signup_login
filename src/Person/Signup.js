@@ -9,7 +9,6 @@ class signup extends React.Component{
   render(){
     return(
       <div className='box'>
-        <h1>Sign Up</h1>
         <form>
         <div className="form-group">
             <label for="exampleInputEmail1">First Name</label>

@@ -24,9 +24,9 @@ class App extends Component {
   render(){
     return (
       <div className="App">
-        <div className="controller row">
-          <div className='signin col-md-6' ><button onClick={this.showsignin}>Sign in</button></div>
-          <div className='signup col-md-6' ><button onClick={this.showsignup}>Sign up</button></div>
+        <div className="controller ">
+          <div className='signin ' onClick={this.showsignin} >Sign in</div>
+          <div className='signup ' onClick={this.showsignup} >Sign up</div>
         </div> 
         <br></br>
         <div className='main-box'>
